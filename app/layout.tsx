@@ -29,10 +29,11 @@ export default function RootLayout({
 
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <section className="flex flex-col px-6 py-7 mx-auto">
+        <>
           <Header />
-          {children}
-        </section>
+          <section className="flex flex-col px-6 py-7 mx-auto">
+            {children}
+          </section></>
       </body>
     </html>
   );
