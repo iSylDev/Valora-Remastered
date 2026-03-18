@@ -47,7 +47,7 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-:root {
+.dark {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -82,7 +82,7 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-.dark {
+:root {
   --background: #F6F5F1;
   --foreground: rgb(57, 88, 82);
   --card: #FFFFFF;
