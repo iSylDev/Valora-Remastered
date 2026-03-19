@@ -5,7 +5,7 @@ import { HeroShowcase } from "./HeroShowcase";
 
 
 const HeroSection = () => {
-  return (<div className="w-full flex flex-col items-center justify-center lg:flex-row-reverse lg:max-w-6xl mx-auto lg:justify-between">
+  return (<div className="w-full flex flex-col items-center justify-center lg:flex-row-reverse mx-auto lg:justify-between">
     <HeroShowcase />
     <div className="w-full lg:w-[60%]">
       <HeroHeaderText />

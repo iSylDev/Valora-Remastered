@@ -11,11 +11,11 @@ import Image from "next/image"
 
 export function HeroShowcase() {
   return (
-    <div className="relative w-full h-fit max-h-150 lg:w-[40%]">
+    <div className="relative w-full h-fit max-h-150 lg:w-[40%] pointer-events-none">
 
       {/* The background gradient stays pinned to the back */}
-      {/* <Image src='/images/herogradient.png' alt="" fill className="z-20 -translate-y-23 shrink-0 lg:hidden" /> */}
-      {/* <Image src='/images/herosectiongradient.png' alt="" fill className="z-20 -translate-y-23 shrink-0 hidden lg:flex" /> */}
+      <Image src='/images/herogradient.png' alt="" fill className="z-20 -translate-y-23 shrink-0 lg:hidden" />
+      
 
       <div className="flex items-center justify-center relative w-full h-full px-4 mt-5">
 
