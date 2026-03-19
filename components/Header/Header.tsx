@@ -1,28 +1,14 @@
 import { Menu } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import Image from "next/image";
 import { Separator } from "../ui/separator";
+import Link from "next/link";
 
 
 const Header = () => {
-  return (<header className="border-b border-b-black/10 py-5 px-5">
-    <div className="flex justify-between items-center">
-      <Image src='/images/logo.svg' alt="Logo" width={270} height={12} />
-
-      <div className="hidden lg:flex lg:justify-between">
-        <nav>
-
-        </nav>
-        <Button>
-          Browse Recipes
-        </Button>
-      </div>
-
-      <Button className="bg-primary/40 hover:bg-primary/50 px-2 py-4 rounded-xl!  hover:cursor-pointer">
-        <Menu />
-      </Button>
-    </div>
-    
+  return (<header className="flex justify-between items-center py-7 px-7">
+    <Image src='/images/logo.svg' width={120} height={130} alt="Valora Logo" />
+    <Link href='/sign-in' className={buttonVariants({size: "lg"})}>Sign In</Link>
   </header>);
 }
 

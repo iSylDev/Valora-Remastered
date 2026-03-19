@@ -1,11 +1,10 @@
+import HeroSection from "@/components/hero section/HeroSection";
 import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
-      <h3>Home Page</h3>
-      <Link href='/about'>About</Link>
-      <Link href='/recipes'>Recipes</Link>
+      <HeroSection />
     </div>
   );
 }
