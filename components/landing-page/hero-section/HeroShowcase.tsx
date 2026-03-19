@@ -11,28 +11,29 @@ import Image from "next/image"
 
 export function HeroShowcase() {
   return (
-    <div className="relative w-full h-fit min-h-100 max-h-150 ">
+    <div className="relative w-full h-fit max-h-150 lg:w-[40%]">
 
       {/* The background gradient stays pinned to the back */}
-      <Image src='/images/herogradient.png' alt="" fill className="z-20 -translate-y-23 shrink-0" />
+      {/* <Image src='/images/herogradient.png' alt="" fill className="z-20 -translate-y-23 shrink-0 lg:hidden" /> */}
+      {/* <Image src='/images/herosectiongradient.png' alt="" fill className="z-20 -translate-y-23 shrink-0 hidden lg:flex" /> */}
 
       <div className="flex items-center justify-center relative w-full h-full px-4 mt-5">
 
         {/* Left Card - Fluid Width */}
         <Card className="p-0 rounded-xl shrink-0 overflow-hidden relative shadow-lg z-20 
-          w-[48vw] min-w-40 max-w-52.5 aspect-3/4 translate-x-[77%] transition-transform duration-500">
+          w-[48vw] min-w-40 max-w-52.5 lg:max-w-63 aspect-3/4 translate-x-[77%] transition-transform duration-500">
           <Image src="/images/heroimage2.png" fill className="object-cover" alt="" />
         </Card>
 
         {/* Middle Card - The Largest Fluid Card */}
         <Card className="p-0 rounded-xl shrink-0 z-50 overflow-hidden relative shadow-2xl 
-          w-[52vw] min-w-40 max-w-60 aspect-3/4 transition-transform duration-500">
+          w-[52vw] min-w-40 max-w-60 lg:max-w-70 aspect-3/4 transition-transform duration-500">
           <Image src="/images/rebel-ridge.png" fill className="object-cover" alt="" />
         </Card>
 
         {/* Right Card - Fluid Width */}
         <Card className="p-0 rounded-xl shrink-0 overflow-hidden relative shadow-lg z-20 
-          w-[48vw] min-w-40 max-w-52.5 aspect-3/4 -translate-x-[77%] transition-transform duration-500">
+          w-[48vw] min-w-40 max-w-52.5 lg:max-w-63 aspect-3/4 -translate-x-[77%] transition-transform duration-500">
           <Image src="/images/heroimage3.png" fill className="object-cover" alt="" />
         </Card>
 
