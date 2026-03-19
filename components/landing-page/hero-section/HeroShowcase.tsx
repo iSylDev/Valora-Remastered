@@ -6,7 +6,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from '../../ui/carousel'
 import Image from "next/image"
 
 export function HeroShowcase() {
@@ -42,3 +42,4 @@ export function HeroShowcase() {
     </div>
   )
 }
+export default HeroShowcase

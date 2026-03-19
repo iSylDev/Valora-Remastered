@@ -1,5 +1,6 @@
-import HeroSection from "@/components/landing-page/hero section/HeroSection";
-import Link from "next/link";
+
+import HeroSection from "@/components/landing-page/hero-section/HeroSection";
+
 
 export default function HomePage() {
   return (
