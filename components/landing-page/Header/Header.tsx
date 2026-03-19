@@ -8,7 +8,9 @@ import Link from "next/link";
 const Header = () => {
   return (<header className="flex justify-between items-center py-7 px-7">
     <Image src='/images/logo.svg' width={120} height={130} alt="Valora Logo" />
-    <Link href='/sign-in' className={buttonVariants({size: "lg"})}>Sign In</Link>
+    <Link href='/sign-in' className={buttonVariants({ size: "lg" })}>
+      Sign In
+    </Link>
   </header>);
 }
 
