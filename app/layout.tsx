@@ -34,7 +34,7 @@ export default function RootLayout({
         <div className="relative">
           <Header />
           <BackgroundImages />
-          <section className="flex flex-col py-7 px-6 mx-auto lg:max-w-6xl z-50">
+          <section className="flex flex-col py-7 px-6 mx-auto lg:max-w-7xl">
             {children}
           </section>
         </div>

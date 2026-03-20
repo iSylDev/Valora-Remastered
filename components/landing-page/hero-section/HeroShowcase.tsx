@@ -18,19 +18,19 @@ export function HeroShowcase() {
 
         {/* Left Card - Fluid Width */}
         <Card className="p-0 rounded-xl shrink-0 overflow-hidden relative shadow-lg z-20 
-          w-[48vw] min-w-40 max-w-52.5 lg:max-w-63 aspect-3/4 translate-x-[77%] transition-transform duration-500">
+          w-[48vw] min-w-40 max-w-52.5 md:max-w-63 aspect-3/4 translate-x-[77%] transition-transform duration-500">
           <Image src="/images/heroimage2.png" fill className="object-cover" alt="" />
         </Card>
 
         {/* Middle Card - The Largest Fluid Card */}
         <Card className="p-0 rounded-xl shrink-0 z-50 overflow-hidden relative shadow-2xl 
-          w-[52vw] min-w-40 max-w-60 lg:max-w-70 aspect-3/4 transition-transform duration-500">
+          w-[52vw] min-w-40 max-w-60 md:max-w-70 aspect-3/4 transition-transform duration-500">
           <Image src="/images/rebel-ridge.png" fill className="object-cover" alt="" />
         </Card>
 
         {/* Right Card - Fluid Width */}
         <Card className="p-0 rounded-xl shrink-0 overflow-hidden relative shadow-lg z-20 
-          w-[48vw] min-w-40 max-w-52.5 lg:max-w-63 aspect-3/4 -translate-x-[77%] transition-transform duration-500">
+          w-[48vw] min-w-40 max-w-52.5 md:max-w-63 aspect-3/4 -translate-x-[77%] transition-transform duration-500">
           <Image src="/images/heroimage3.png" fill className="object-cover" alt="" />
         </Card>
 
