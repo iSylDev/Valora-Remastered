@@ -1,13 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 
+type TrendingCardProps = {
+  src: string
+  alt: string
+}
 
-const TrendingCard = () => {
+
+const TrendingCard = ({ src, alt }: TrendingCardProps) => {
   return (
-    <Card>
-      <CardContent>
-        <Image src='' alt="" fill />
-      </CardContent>
+    <Card className="w-full h-100 overflow-hidden relative rounded-none p-0 border-0">
+      <Image src={src} alt={alt} fill className="object-cover object-center" />
     </Card>
   )
 }
