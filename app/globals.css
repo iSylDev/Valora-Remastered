@@ -91,7 +91,7 @@
   --background: #000000;
   --foreground: rgb(255, 255, 255);
   --card: #141414;
-  --card-foreground: rgb(255, 255, 255);
+  --card-foreground: #989898;
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: #1e09de;

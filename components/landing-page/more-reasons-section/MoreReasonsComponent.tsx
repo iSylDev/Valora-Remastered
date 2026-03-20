@@ -8,14 +8,16 @@ type MoreReasonsProps = {
 
 
 export default function MoreReasonsComponent({ image, headerText, description }: MoreReasonsProps) {
-  <div>
-    <div className="w-12 h-12 rounded-full">
-      <Image src={image} fill alt={headerText} />
-    </div>
+  return (
+    <div className="flex flex-col items-center gap-3">
+      <div className="w-fit bg-white p-3 rounded-full overflow-hidden">
+        <Image src={image} width={40} height={40} alt={headerText} />
+      </div>
 
-    <div>
-      <h3>{headerText}</h3>
-      <p>{description}</p>
+      <div className="text-center space-y-3">
+        <h3 className="text-xl">{headerText}</h3>
+        <p className="text-card-foreground">{description}</p>
+      </div>
     </div>
-  </div>
+  )
 }
