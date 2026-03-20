@@ -4,7 +4,7 @@ import trendingNowData from "./trendingNowData"
 
 const TrendingGrid = () => {
   return (
-    <div className="grid grid-cols-1 space-y-7">
+    <div className="flex flex-wrap gap-7 justify-center">
       {
         trendingNowData.map(data => (
           <TrendingCard key={data.image} alt={data.image} src={data.image} />

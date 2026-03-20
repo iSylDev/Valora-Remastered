@@ -9,7 +9,7 @@ type TrendingCardProps = {
 
 const TrendingCard = ({ src, alt }: TrendingCardProps) => {
   return (
-    <Card className="w-full h-100 overflow-hidden relative rounded-none p-0 border-0">
+    <Card className="w-[16rem] h-100 overflow-hidden relative rounded-none p-0 border-0">
       <Image src={src} alt={alt} fill className="object-cover object-center" />
     </Card>
   )
