@@ -5,6 +5,7 @@ import MoreReasonBackgroundImages from "@/components/landing-page/BackgroundImag
 import TrendingSection from "@/components/landing-page/trending-now/TrendingSection";
 import SearchByGenreSection from "@/components/landing-page/search-by-genre/GenreSection";
 import FAQSection from "@/components/FAQ/FAQSection";
+import EmailInputArea from "@/components/landing-page/shared-components/EmailInputArea";
 
 
 
@@ -27,6 +28,7 @@ export default function HomePage() {
         <TrendingSection />
         <SearchByGenreSection />
         <FAQSection />
+        <EmailInputArea />
       </section>
       
 
