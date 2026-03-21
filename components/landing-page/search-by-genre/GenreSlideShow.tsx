@@ -4,7 +4,7 @@ import SearchByGenreBadge from "./GenreBadge";
 export default function GenreSlideshow() {
   // Add all your genre data here
   const genres = [
-    { label: "Action", src: "/images/search-by-genre/action.png" },
+    { label: "Action", src: "/images/search-by-genre/war.png" },
     { label: "Adventure", src: "/images/search-by-genre/adventure.png" },
     { label: "Animation", src: "/images/search-by-genre/animation.png" },
     { label: "Comedy", src: "/images/search-by-genre/comedy.png" },
@@ -25,7 +25,7 @@ export default function GenreSlideshow() {
     <section className="relative w-full overflow-hidden bg-black py-12">
 
       {/* Row 1: Normal Direction */}
-      <div className="flex gap-4 mb-6">
+      <div className="flex gap-4 mb-3 lg:mb-6">
         <div className="animate-marquee flex gap-4">
           {[...genres, ...genres, ...genres].map((genre, i) => (
             <SearchByGenreBadge key={i} label={genre.label} imageUrl={genre.src} />
@@ -42,7 +42,7 @@ export default function GenreSlideshow() {
         </div>
       </div>
 
-      <div className="flex gap-4 mt-6">
+      <div className="flex gap-4 mt-3 lg:mt-6">
         <div className="animate-marquee flex gap-4">
           {[...genres, ...genres, ...genres].map((genre, i) => (
             <SearchByGenreBadge key={i} label={genre.label} imageUrl={genre.src} />
@@ -51,8 +51,8 @@ export default function GenreSlideshow() {
       </div>
 
       {/* Fade Overlays (Optional but looks like your image) */}
-      {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-linear-to-r from-black to-transparent z-10" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-linear-to-l from-black to-transparent z-10" /> */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-12 lg:w-32 bg-linear-to-r from-black to-transparent z-10" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-12 lg:w-32 bg-linear-to-l from-black to-transparent z-10" />
 
     </section>
   );

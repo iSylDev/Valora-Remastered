@@ -157,13 +157,13 @@ body {
   .animate-marquee {
     display: flex;
     width: max-content;
-    animation: marquee 40s linear infinite;
+    animation: marquee 80s linear infinite;
   }
 
   .animate-marquee-reverse {
     display: flex;
     width: max-content;
-    animation: marquee-reverse 50s linear infinite;
+    animation: marquee-reverse 90s linear infinite;
   }
 
   .animate-marquee:hover,
