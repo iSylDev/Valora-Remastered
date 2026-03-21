@@ -26,7 +26,7 @@ function AccordionItem({
   return (
     <AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn("not-last:border-b border-b-white/10", className)}
+      className={cn("group/accordion-item not-last:border-b  border-b-white/10", className)}
       {...props}
     />
   )
@@ -42,7 +42,7 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "group/accordion-trigger text-card-foreground aria-expanded:text-white duration-300 hover:cursor-pointer hover:text-white relative flex flex-1 items-start justify-between rounded-lg border border-transparent py-2.5 text-left lg:text-lg font-medium transition-all outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground",
+          "group/accordion-trigger group-first/accordion-item:lg:pt-0 text-card-foreground aria-expanded:text-white duration-300 hover:cursor-pointer hover:text-white relative flex flex-1 items-start justify-between rounded-lg border border-transparent py-2.5 md:py-4 lg:py-5 text-left lg:text-lg font-medium transition-all outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground",
           className
         )}
         {...props}
@@ -73,7 +73,7 @@ function AccordionContent({
     >
       <div
         className={cn(
-          "h-fit leading-5 text-card-foreground pt-0 pb-2.5 [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground [&_p:not(:last-child)]:mb-4",
+          "h-fit leading-5 text-card-foreground pt-0 pb-3 lg:pb-5 [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground [&_p:not(:last-child)]:mb-4",
           className
         )}
       >
