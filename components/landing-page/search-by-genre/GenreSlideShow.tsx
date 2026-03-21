@@ -25,7 +25,7 @@ export default function GenreSlideshow() {
     <section className="relative w-full overflow-hidden bg-black py-12">
 
       {/* Row 1: Normal Direction */}
-      <div className="flex gap-4 mb-3 lg:mb-6">
+      <div className="flex gap-4 mb-3 md:mb-4 lg:mb-6">
         <div className="animate-marquee flex gap-4">
           {[...genres, ...genres, ...genres].map((genre, i) => (
             <SearchByGenreBadge key={i} label={genre.label} imageUrl={genre.src} />
@@ -42,7 +42,8 @@ export default function GenreSlideshow() {
         </div>
       </div>
 
-      <div className="flex gap-4 mt-3 lg:mt-6">
+      {/* Row 3: Normal Direction */}
+      <div className="flex gap-4 mt-3 md:mt-4 lg:mt-6">
         <div className="animate-marquee flex gap-4">
           {[...genres, ...genres, ...genres].map((genre, i) => (
             <SearchByGenreBadge key={i} label={genre.label} imageUrl={genre.src} />
