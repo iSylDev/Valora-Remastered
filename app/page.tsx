@@ -28,7 +28,7 @@ export default function HomePage() {
         <TrendingSection />
         <SearchByGenreSection />
         <FAQSection />
-        <EmailInputArea />
+        <EmailInputArea className="mt-30 lg:mt-40" />
       </section>
       
 
