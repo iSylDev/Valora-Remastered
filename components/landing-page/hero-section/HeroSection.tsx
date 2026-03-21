@@ -1,4 +1,5 @@
 
+import EmailInputArea from "../shared-components/EmailInputArea";
 import HeroEmailInputArea from "./HeroEmailInputArea";
 import HeroHeaderText from "./HeroHeaderText";
 import { HeroShowcase } from "./HeroShowcase";
@@ -9,7 +10,8 @@ const HeroSection = () => {
     <HeroShowcase />
     <div className="w-full lg:w-[60%]">
       <HeroHeaderText />
-      <HeroEmailInputArea />
+      {/* <HeroEmailInputArea /> */}
+      <EmailInputArea />
     </div>
   </div>);
 }
