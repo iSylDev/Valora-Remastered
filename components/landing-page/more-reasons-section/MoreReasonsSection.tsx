@@ -6,7 +6,7 @@ const MoreReasonsSection = () => {
   return (
     <div className="mt-30 z-50">
       <h3 className="text-3xl font-semibold text-center lg:text-left mb-12 lg:text-4xl">More Reasons to Join</h3>
-      <div className="flex flex-col gap-12  lg:flex-row">
+      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {
           moreReasonsData.map(data => (
             <MoreReasonsComponent

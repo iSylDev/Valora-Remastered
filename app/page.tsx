@@ -6,6 +6,7 @@ import TrendingSection from "@/components/landing-page/trending-now/TrendingSect
 import SearchByGenreSection from "@/components/landing-page/search-by-genre/GenreSection";
 import FAQSection from "@/components/FAQ/FAQSection";
 import EmailInputArea from "@/components/landing-page/shared-components/EmailInputArea";
+import Footer from "@/components/landing-page/footer/footer";
 
 
 
@@ -13,22 +14,23 @@ export default function HomePage() {
   return (
     <>
       <HeroBackgroundImages />
-      <section className="py-7 px-8 lg:px-16 mx-auto lg:max-w-7xl">
+      <section className="py-7 px-8 lg:px-16 mx-auto lg:max-w-340">
         <HeroSection />
       </section>
 
       <div className="fit relative">
         <MoreReasonBackgroundImages />
-        <section className="py-7 px-8 lg:px-16 mx-auto lg:max-w-7xl">
+        <section className="py-7 px-8 lg:px-16 mx-auto lg:max-w-340">
           <MoreReasonsSection />
         </section>
       </div>
 
-      <section className="flex flex-col py-7 px-8 lg:px-16 mx-auto lg:max-w-7xl">
+      <section className="flex flex-col py-7 px-8 lg:px-16 mx-auto lg:max-w-340">
         <TrendingSection />
         <SearchByGenreSection />
         <FAQSection />
         <EmailInputArea className="mt-30 lg:mt-40" />
+        <Footer />
       </section>
       
 

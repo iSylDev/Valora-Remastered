@@ -9,7 +9,6 @@ const HeroSection = () => {
     <HeroShowcase />
     <div className="w-full lg:w-[60%]">
       <HeroHeaderText />
-      {/* <HeroEmailInputArea /> */}
       <EmailInputArea className="mt-12 w-full flex flex-col-reverse lg:text-left" />
     </div>
   </div>);
