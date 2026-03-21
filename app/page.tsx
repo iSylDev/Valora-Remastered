@@ -3,7 +3,7 @@ import MoreReasonsSection from "@/components/landing-page/more-reasons-section/M
 import HeroBackgroundImages from "@/components/BackgroundImages/HeroBackgroundImages";
 import MoreReasonBackgroundImages from "@/components/BackgroundImages/MoreReasonsBackgroundImages";
 import TrendingSection from "@/components/landing-page/trending-now/TrendingSection";
-import SearchByGenreSection from "@/components/landing-page/search-by-genre/SearchByGenreSection";
+import SearchByGenreSection from "@/components/landing-page/search-by-genre/GenreSection";
 
 
 

@@ -1,5 +1,5 @@
 import SectionHeader from "../shared-components/SectionHeader";
-import SearchByGenreSlideShow from "./SearchByGenreSlideShow";
+import SearchByGenreSlideShow from "./GenreSlideShow";
 
 
 
