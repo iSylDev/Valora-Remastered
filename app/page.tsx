@@ -13,9 +13,11 @@ import Footer from "@/components/landing-page/footer/footer";
 export default function HomePage() {
   return (
     <>
-      <HeroBackgroundImages />
-      <section className="py-7 px-8 lg:px-16 mx-auto lg:max-w-340">
-        <HeroSection />
+      <section className=" relative">
+        <HeroBackgroundImages />
+        <section className="py-7 px-8 lg:px-16 mx-auto lg:max-w-340 overflow-hidden">
+          <HeroSection />
+        </section>
       </section>
 
       <div className="fit relative">
@@ -32,7 +34,7 @@ export default function HomePage() {
         <EmailInputArea className="mt-30 lg:mt-40" />
         <Footer />
       </section>
-      
+
 
 
     </>

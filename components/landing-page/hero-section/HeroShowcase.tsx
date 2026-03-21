@@ -12,8 +12,6 @@ import Image from "next/image"
 export function HeroShowcase() {
   return (
     <div className="relative w-full h-fit max-h-150 lg:w-[40%] pointer-events-none">
-      {/* The background gradient stays pinned to the back */}
-
       <div className="flex items-center justify-center relative w-full h-full px-4 mt-5">
 
         {/* Left Card - Fluid Width */}
