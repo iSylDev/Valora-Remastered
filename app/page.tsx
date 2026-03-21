@@ -3,6 +3,7 @@ import MoreReasonsSection from "@/components/landing-page/more-reasons-section/M
 import HeroBackgroundImages from "@/components/BackgroundImages/HeroBackgroundImages";
 import MoreReasonBackgroundImages from "@/components/BackgroundImages/MoreReasonsBackgroundImages";
 import TrendingSection from "@/components/landing-page/trending-now/TrendingSection";
+import SearchByGenreSection from "@/components/landing-page/search-by-genre/SearchByGenreSection";
 
 
 
@@ -10,19 +11,20 @@ export default function HomePage() {
   return (
     <>
       <HeroBackgroundImages />
-      <section className="flex flex-col py-7 px-8 lg:px-16 mx-auto lg:max-w-7xl">
+      <section className="py-7 px-8 lg:px-16 mx-auto lg:max-w-7xl">
         <HeroSection />
       </section>
 
       <div className="fit relative">
         <MoreReasonBackgroundImages />
-        <section className="flex flex-col py-7 px-8 lg:px-16 mx-auto lg:max-w-7xl">
+        <section className="py-7 px-8 lg:px-16 mx-auto lg:max-w-7xl">
           <MoreReasonsSection />
         </section>
       </div>
 
       <section className="flex flex-col py-7 px-8 lg:px-16 mx-auto lg:max-w-7xl">
         <TrendingSection />
+        <SearchByGenreSection />
       </section>
 
 
