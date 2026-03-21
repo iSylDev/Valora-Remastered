@@ -10,7 +10,7 @@ import FAQData from "./FAQData"
 
 export default function FAQAccordion() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full lg:w[60%]">
       <Accordion
         type="single"
         collapsible
