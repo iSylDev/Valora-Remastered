@@ -8,20 +8,22 @@ import FAQData from "./FAQData"
 
 
 
-export function AccordionBasic() {
+export default function FAQAccordion() {
   return (
-    <Accordion
-      type="single"
-      collapsible
-      defaultValue="item-1"
-      className="max-w-lg"
-    >
-      {FAQData.map((item) => (
-        <AccordionItem key={item.value} value={item.value}>
-          <AccordionTrigger>{item.trigger}</AccordionTrigger>
-          <AccordionContent>{item.content}</AccordionContent>
-        </AccordionItem>
-      ))}
-    </Accordion>
+    <div className="flex flex-col items-center">
+      <Accordion
+        type="single"
+        collapsible
+        defaultValue="item-1"
+        className="max-w-lg"
+      >
+        {FAQData.map((item) => (
+          <AccordionItem key={item.value} value={item.value}>
+            <AccordionTrigger>{item.trigger}</AccordionTrigger>
+            <AccordionContent>{item.content}</AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </div>
   )
 }

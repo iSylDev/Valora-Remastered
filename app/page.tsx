@@ -4,6 +4,7 @@ import HeroBackgroundImages from "@/components/landing-page/BackgroundImages/Her
 import MoreReasonBackgroundImages from "@/components/landing-page/BackgroundImages/MoreReasonsBackgroundImages";
 import TrendingSection from "@/components/landing-page/trending-now/TrendingSection";
 import SearchByGenreSection from "@/components/landing-page/search-by-genre/GenreSection";
+import FAQSection from "@/components/FAQ/FAQSection";
 
 
 
@@ -25,7 +26,9 @@ export default function HomePage() {
       <section className="flex flex-col py-7 px-8 lg:px-16 mx-auto lg:max-w-7xl">
         <TrendingSection />
         <SearchByGenreSection />
+        <FAQSection />
       </section>
+      
 
 
     </>
